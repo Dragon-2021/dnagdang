@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>登录-当当网</title>
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/all.css">
+<link rel="stylesheet" href="css/login.css">
+<link rel="shortcut icon" href="dangdang.ico" /> 
+<link rel="stylesheet" href="css/iconfont.css">
+<script src="js/ajax.js"></script>
+<script src="js/jquery.js"></script>
+<script src="js/tip.js"></script>
+<style>
+   
+</style>
+</head>
+<body>
+    <div class="header">
+        <main>
+            <div class="header-left">
+                <img src="images/registerheader_logo.gif" alt="">
+            </div>
+            <div class="header-right">
+                <ul>
+                    <li>
+                        <img src="images/buy_1.png" alt="">
+                        <a href="cart.html">购物车</a>
+                    </li>
+                    <li class="hen"></li>
+                    <li>
+                        <a href="#">我的订单</a>
+                    </li>
+                    <li class="hen"></li>
+                    <li>
+                        <a href="#">我的当当
+                            <img src="images/down_03.jpg" alt="">
+                        </a>
+                        
+                        <ul>
+                            <li>我的订单</li>
+                            <li>购物礼券</li>
+                            <li>我的积分</li>
+                            <li>我的收藏</li>
+                            <li>我的评论</li>
+                            <li>数字商品</li>
+                        </ul>
+                    </li>
+                    <li class="hen"></li>
+                    <li>
+                        <a href="#">礼品卡
+                            <img src="images/down_03.jpg" alt="">
+                        </a>
+                        <ul>
+                            <li>购买</li>
+                            <li>激活</li>
+                           
+                        </ul>
+                    </li>
+                    <li class="hen"></li>
+                    <li>
+                        <a href="#">手机当当</a>
+                    </li>
+                    <li class="hen"></li>
+                    <li>
+                        <a href="#">企业销售</a>
+                    </li>
+                    <li class="hen"></li>
+                    <li>
+                        <a href="#">帮助</a>
+                    </li>
+                    
+                </ul>
+            </div>
+            <p class="welcome">
+                欢迎光临当当网，请
+                <a href="login.html" class="login">登录</a>
+                <a href="#">免费注册</a>
+            </p>
+        </main>
+    </div>
+    <div class="big">
+        <div class="new">
+            <div class="new_more">
+                <div class="headers">
+                    <div class="user">用户登录</div>
+                    <div class="dd">
+                        <img src="images/register2.png" alt="">
+                        <a href="home.html">当当首页</a>
+                    </div>
+                </div>
+                <form action="javascript:;" method="POST">
+                    <table align="center">
+                        <tr>
+                            <td class="tdfirst">用户名：</td>
+                            <td style="width: 300px;"><input type="text" name="username" class="text"></td> 
+                            <td class="three">用户名由中文/字母和数字组成，数字不能开头</td>
+                        </tr>
+                        <tr>
+                            <td class="tdfirst">密码：</td>
+                            <td><input type="text" name="sub" class="text"></td>
+                            <td class="three">密码为6-16位</td>
+                        </tr>
+                        <tr>
+                            <td><input type="reset" name="reset" class="repeat"></td>
+                            <td><input type="submit" value="立即登录" name="go" style="margin-right: 20px;" class="quickly">
+                                <input type="button" name="or" value="注册界面" class="submits"></td>
+                        </tr>
+                        
+                    </table>
+                    
+                </form>
+                <div class="form-group">
+                    <div class="col-sm-offset-2 col-sm-10">
+                      <div class="checkbox">
+                        <label>
+                          <input type="checkbox" name="agree"> 我已阅读并同意 <a class="seeProto btn btn-default none" href="javascript:;">《当当交易条款》</a>
+                        </label>
+                      </div>
+                    </div>
+                </div>
+                <div class="proto">
+                    <h3 class="text-center">交易条款</h3>
+                    　　当当（www.dangdang.com）上的商品由北京当当科文电子商务有限公司（“北京当当网公司”）或其关联公
+                    司或第三方卖家销售。如无相反表示，本交易条款中的“当当”为北京当当公司及其关联公司
+                    的统称，亦包括其所运营的网站www.dangdang.com。如果您在当当购物，您便接受了
+                    以下交易条款。请仔细阅读这些条款。当您使用当当目前或将来提供的服
+                    务（例如，我的账户、礼品卡、VIP会员、商店街等）时，您同时应接受适用于那些服务的条款、准则和条件（“特殊条款”）；如果以下交易条款与特殊条款有不一致之处，则以特殊条款为准。通过在当当购买商品和/或使用其提供的服务，
+                    您同意接受本交易条款和所有有关的政策、条件和准则的约束。如果您不同意本交易条款中的任何一条，您可以选择不在当当购买商品或接受服务。
+                    您注册成功后，当当将为您开通一个账户，作为您在当当交易及使用当当服务
+                    时的唯一身份标识，该账户的登录名和密码由您负责保管。您保证在使用当当过程中，遵守诚
+                    实信用原则，不利用当当账户进行牟利性经营活动，不采取不正当竞争行为，不扰乱网上交易的正常秩序，不从事与网上交易无关的行为。您同意并确认，当当有权对您是否违反上述承诺做出单方认定，并根据单方认定结果适用相关规则予以处理或终止向您提供服务，且无须征得您的同意或提前通知您。用户在申请使用当当服务时，必须准确提供必要的资料，如资料有任何变动，请在当当（www.dangdang.com）及时更新。
+
+                <span class="btn btn-success agree">同意</span>
+                    <b class="closeBtn btn btn-xs">×</b>
+                </div>  
+            </div>
+            
+        </div>
+    </div>
+    
+</body>
+<script>
+    var or = document.querySelector("[name = or]");
+    var submit = document.querySelector("[name = go]");
+    var seeProto = document.querySelector('.seeProto')
+    var proto = document.querySelector('.proto')
+    var closeBtn = proto.querySelector('.closeBtn')
+    var agreeBtn = proto.querySelector('.agree')
+    var tip = document.querySelector(".tip")
+    var tipBox = document.querySelector('.tipBox')
+    var username = document.querySelector("[name = username]")
+    var sub = document.querySelector("[name = sub]")
+    var agreeProto = document.querySelector('[name="agree"]')
+    // 查看条款
+    seeProto.onclick = function(){
+        proto.style.display = 'block';
+    }
+    or.onclick = function(){
+        location.href ="register.html"
+    }
+    //关闭条款
+    closeBtn.onclick = function(){
+        proto.style.display='none'
+    }
+    //同意条款
+    agreeBtn.onclick = function(){
+        proto.style.display = 'none'
+        agreeProto.checked = true
+        // agreeProto.parentElement.lastElementChild.style.display = 'none';
+    }
+    submit.onclick = function(){
+        if(username.value === ""){
+            username.parentElement.nextElementSibling.innerText = '用户名不能为空';
+            username.parentElement.nextElementSibling.style.visibility="visible"
+            return false;
+        }
+         // 用户名由中文/字母和数字组成，数字不能开头,
+         var reg =/(^[\u4e00-\u9fa5]{2,6}$)|(^[a-zA-Z][a-zA-Z0-9]{4,16}$)|(^[\u4e00-\u9fa5a-zA-Z][a-zA-Z0-9\u4e00-\u9fa5]{4,8}$)/
+        if(!reg.test(username.value)){
+            username.parentElement.nextElementSibling.innerText = "用户名由字母开头，3-16位数字字母下划线"
+            username.parentElement.nextElementSibling.style.visibility="visible"
+            return false;
+        }
+        if(sub.value === ""){
+            sub.parentElement.nextElementSibling.innerText = '密码不能为空';
+            sub.parentElement.nextElementSibling.style.visibility="visible"
+            return false;
+        }
+               // 密码为6-16位
+        var reg =/^.{6,16}$/
+        if(!reg.test(sub.value)){
+            sub.parentElement.nextElementSibling.innerText = "密码必须为6-16位"
+            sub.parentElement.nextElementSibling.style.visibility="visible"
+            return false;
+        }
+        
+        // 校验条款
+        if(!agreeProto.checked){
+            agreeProto.parentElement.lastElementChild.innerText = '请勾选协议';
+            agreeProto.parentElement.lastElementChild.style.display = 'block';
+        }
+
+        this.disabled = true
+        promiseAjax({
+            url:'php/login.php',
+                method:"post",
+                // dataType:"json",
+                data:{
+                    username:document.querySelector("[name = 'username']").value,
+                    sub:document.querySelector("[name='sub']").value,
+                },
+        }).then(function(res){
+            var{meta:{status,message}} = res;
+                    //  解构赋值
+                    tell.alert(message)
+                    if(status ===1){
+                        // 注册成功，跳转登录界面
+                        setTimeout(function(){
+                        location.href = 'home.html';
+                        },1500)
+                        // 修改
+                    }else{
+                        setTimeout(function(){
+                        submit.disabled = false;
+                        tell.close()
+                    },2000)
+      }
+                    return false;
+        })
+        
+    }
+username.onfocus = function(){
+    username.parentElement.nextElementSibling.style.visibility="hidden";
+}
+sub.onfocus = function(){
+    sub.parentElement.nextElementSibling.style.visibility="hidden";
+}
+
+// agreeProto.onclick = function(){
+//   if(this.checked){
+//       agreeProto.parentElement.lastElementChild.style.display = 'none';
+//   }
+// }
+</script>
+</html>

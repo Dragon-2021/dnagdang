@@ -1,0 +1,353 @@
+input{
+    outline: none;
+}
+main{
+width: 960px;
+height: 100%;
+margin: auto;
+background-color: white;
+}
+.header-left{
+float: left;
+height: 59px;
+width: 172px;
+}
+.header>main{
+border-bottom: 2px solid red;
+}
+.header{
+width: 100%;
+height: 73px;
+}
+body{
+background-color: #F6F9FB;
+}
+.header-right{
+float: right;
+display: inline;
+width: 788px;
+height: 21px;
+}
+.header-right>ul{
+float: right;
+display: inline;
+height: 21px;
+width: 422px;
+font-size: 12px;
+line-height: 21px;
+}
+.header-right>ul li:nth-of-type(1) img{
+height: 14px;
+}
+.header-right>ul li:nth-of-type(1){
+width: 64px;
+}
+.header-right>ul li:nth-of-type(3){
+width: 62px;
+}
+.header-right>ul li:nth-of-type(5):hover a{
+border-bottom: none;
+text-decoration: none;
+
+}
+.header-right>ul li:nth-of-type(5):hover ul{
+display: block;
+}
+.header-right>ul li:nth-of-type(5) a{
+display: inline-block;
+width: 71px;
+}
+.header-right>ul li:nth-of-type(5):hover a{
+border: 1px solid #ee7304;
+border-bottom: none;
+}
+
+.header-right>ul li:nth-of-type(5):hover a img{
+transform: rotate(180deg);
+transition: all 0.5s;
+}
+
+.header-right>ul li:nth-of-type(5){
+position: relative;
+width: 71px;
+}
+.header-right>ul li:nth-of-type(5)>ul{
+position: absolute;
+width: 71px;
+border: 1px solid #f60;
+border-top: none;
+height: 126px;    
+background-color: #fff;
+display: none;    
+z-index: 3;
+}
+.header-right>ul li:nth-of-type(5)>ul li:hover{
+cursor: pointer;
+color: #f60;
+text-decoration: underline
+}
+.header-right>ul li:nth-of-type(5)>ul>li{
+height: 21px;
+width: 100%;
+line-height: 21px;
+text-align: left;
+margin-left: 3px;
+}
+.header-right>ul li:nth-of-type(7){
+width: 59px;
+}
+.header-right>ul li:nth-of-type(7):hover a img{
+transform: rotate(180deg);
+transition: all 0.5s;
+}
+.header-right>ul li:nth-of-type(7)>a:hover{
+border-bottom: none;
+text-decoration: none;
+
+}
+
+.header-right>ul li:nth-of-type(7):hover a{
+border: 1px solid #ee7304;
+border-bottom: none;
+}
+
+.header-right>ul li:nth-of-type(7):hover a img{
+transform: rotate(180deg);
+transition: all 0.5s;
+}
+
+.header-right>ul li:nth-of-type(7) a{
+position: relative;
+display: inline-block;
+width: 59px;
+}
+.header-right>ul li:nth-of-type(7)>ul{
+position: absolute;
+width: 59px;
+border: 1px solid #f60;
+border-top: none;
+height: 42px;    
+background-color: #fff;
+display: none;    
+z-index: 3;
+}
+.header-right>ul li:nth-of-type(7)>ul li:hover{
+cursor: pointer;
+color: #f60;
+text-decoration: underline
+}
+
+.header-right>ul li:nth-of-type(7)>ul>li{
+height: 21px;
+width: 100%;
+line-height: 21px;
+text-align: left;
+margin-left: 3px;
+}
+.header-right>ul li:nth-of-type(7):hover ul{
+display: block;
+}
+.header-right>ul li:nth-of-type(9){
+width: 62px;
+}
+.header-right>ul li:nth-of-type(11){
+width: 62px;
+}
+.header-right>ul li:nth-of-type(13){
+width: 36px;
+}
+.header-right>ul li a{
+color: #404040;
+
+}
+.header-right>ul li a:hover{
+color: #f60;
+text-decoration: underline
+
+}
+.header-right>ul li{
+float: left;
+text-align: center;
+}
+.header-right>ul li.hen{
+padding: 0;
+width: 1px;
+height: 21px;
+background: url(../images/registerheader_bg_1101.gif) no-repeat 0 -102px;
+font-size: 0;
+line-height: 0;
+overflow: hidden;
+}
+.welcome{
+font-size: 12px;
+float: right;
+display: inline;
+padding: 2px 10px 0 0;
+width: 450px;
+height: 19px;
+overflow: hidden;
+white-space: nowrap;
+text-align: right;
+}
+.big{
+    margin: 0 auto;
+    width: 960px;
+    padding-top: 40px;
+}
+.big .new{
+    background-color: #ebeeef;
+    width: 950px;
+    margin-bottom: 40px;
+    position: relative;
+    height: 620px;
+}
+.big .new .new_more{
+    background: #fff;
+    position: relative;
+    height:620px;
+    top: -10px;
+    right: -10px;
+    width: 950px;
+    box-shadow: -1px 1px 1px rgb(232 235 236);
+}
+.headers{
+    height: 74px;
+    border-bottom: solid 1px #eceef2;
+    padding-right: 15px;
+    margin: 0 10px;
+}
+.user{
+    background-color: white;
+    position: relative;
+    top: 28px;
+    border: solid 1px #eceef2;
+    border-bottom: none;
+    width: 137px;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    font-size: 16px;
+    margin-left: 20px;
+}
+.dd{
+    float: right;
+    color: #646464;
+    line-height: 22px;
+    width: 127px;
+    height: 22px;
+    font-size: 12px;
+    color: #666;
+}
+.dd img{
+    width: 15px;
+}
+.dd>a{
+    color: #666;
+    text-decoration: none;
+}
+.dd>a:hover{
+    color: #f60;
+}
+form,table{
+    width: 100%;
+    height: 480px;
+    text-align: center;
+}
+.text{
+    border: 1px solid #e6e6e6;
+    height: 40px;
+    float: left;
+    width: 290px;
+    margin-right: 10px;
+    padding: 0px 10px;
+    line-height: 18px;
+    outline:none;
+    border-radius: 2px;
+    color: #333;
+}
+.tr td:nth-of-type(2){
+    width: 300px;
+}
+.tdfirst{
+    font-size: 14px;
+    width: 338px;
+    padding-right: 10px;
+    text-align: right;
+    vertical-align: top;
+    color: #646464;
+    line-height: 70px;
+    padding-top: 8px;
+    height: 70px;
+    
+    /*  */
+}
+.three{
+    width:310px;
+    height: 77px;
+    text-align: left;
+    visibility: hidden;
+    color: red;
+
+}
+.quickly,.submits,.repeat{
+    display: inline-block;
+    font-size: 20px;
+    border: 0;
+    width: 178px;
+    height: 44px;
+    line-height: 44px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #ff2832;
+    color: #fff;
+    border-radius: 22px;
+}
+.quickly{
+    margin-right: 50px;
+}
+.submits{
+    margin-left: 50px;
+    position: absolute;
+    right: 100px;
+}
+.quickly:hover{
+    background-color: #f01923;
+}
+.none{
+    border: none;
+    color: blue;
+}
+.none:hover{
+    background: none;
+    color: blue;
+    text-decoration: underline;
+}
+.proto{
+    width: 600px;
+    height: 400px;
+    overflow: auto;
+    border-radius:20px;
+    border:1px solid #ccc;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    display:none;
+}
+.proto span{
+    position:absolute;
+    right:20px;
+    bottom:10px;
+    border-radius: 10px;
+}
+.proto b{
+    position:absolute;
+    right: 0;
+    top: 0;
+    font-size: 16px;
+}
+form p{
+    color:red;
+    display:none;
+}
