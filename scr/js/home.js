@@ -1,10 +1,7 @@
-// var all = document.querySelector(".all")
-    // var allUlis = document.querySelectorAll(".all ul li");
-    // for(var i=0;i<allUlis.length;i++){
-    //     allUlis[i].onclick = function(){
-    //         all.innerText = this.innerText;
-    //     }
-    // }
+
+    let loadindex = layer.load(0,{
+        shade:[1,"#000"]
+    })
     var greatullis =document.querySelectorAll(".only-left .great li");
     // console.log(greatullis);
     var great  =document.querySelector(".only-left .great")
@@ -231,6 +228,7 @@ tables.init()
 var tables2 = new Tab("only-left2")
 tables2.init()
 // 渲染
+var num=0
 promiseAjax({
     url:"http://localhost/dangdang/scr/php/home.php",
     // data:{
@@ -241,10 +239,11 @@ promiseAjax({
     // var str="";
     for(var i=0;i<res.length;i+=10){
         for(let j=0;j<greatullis.length;j++){
+            var url  =res[j+i].url.split('====')
             var str="";
             str +=`
-            <a href="#">
-            <img src=${res[j+i].url} alt="">
+            <a href="http://localhost/dangdang/scr/detail.html?id=${res[j+i].id}&fir=1">
+            <img src=${url[0]} alt="">
             </a>
             <p class="only-first">${res[j+i].name}</p>
             <span class="dd">当当独家特供</span>
@@ -257,7 +256,10 @@ promiseAjax({
         greatul[i/10].querySelectorAll("li")[j].innerHTML = str
         }
         // greatullis[i].innerHTML = str
-
+        num++
+        if(num===2){
+            layer.close(loadindex)
+        }
     }
 })
 
@@ -270,10 +272,11 @@ function All(url,length,ul){            //地址，所有li长度，ul个数
 
         for(var i=0;i<res.length;i+=10){
             for(let j=0;j<length;j++){
+                var url  =res[j+i].url.split('====')
                 var str="";
                 str +=`
-                <a href="#">
-                <img src=${res[j+i].url} alt="">
+                <a href="http://localhost/dangdang/scr/detail.html?id=${res[j+i].id}&oller=1">
+                <img src=${url[0]} alt="">
                 </a>
                 <p class="only-first">${res[j+i].name}</p>
                 <span class="dd">当当独家特供</span>
@@ -287,6 +290,10 @@ function All(url,length,ul){            //地址，所有li长度，ul个数
             }
         }
     })
+    num++
+    if(num===2){
+        layer.close(loadindex)
+    }
 }
 // 封装渲染函数end
 All('http://localhost/dangdang/scr/php/homeGood.php',greatullis2.length,greatul2)
@@ -357,3 +364,6 @@ $(".fix6").click(function(){
     }
     return false
 })
+// 当当首页跳转详情
+// cookie
+

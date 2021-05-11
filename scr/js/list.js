@@ -1,4 +1,7 @@
-
+// 加载层
+let loadindex = layer.load(1,{
+    shade:[1,'#000']
+})
 var newbuyLi = document.querySelectorAll(".newbuy>ul>li")
 var uls = document.querySelectorAll(".newbuy ul")
 // console.log(newbuyLi);
@@ -40,18 +43,7 @@ Tab.prototype.init = function(){
             this.ulis[0].className="active"
             this.ulis[1].className =""
         }
-        // for(let i=0;i<this.ulis.length;i++){  
-        //     // if(){
-               
-        //     // }        
-        //     for(var j=0;j<this.ulis.length;j++){
-        //         this.ulis[j].className = ""
-        //         this.great[j].className = ""
-        //     } 
-        //     this.ulis[i].className = "active"
-        //     this.great[i].className = "active"
-           
-        // }
+        
     }
     this.left.onclick = ()=>{
         
@@ -108,10 +100,11 @@ function All(url,length,ul){            //地址，所有li长度，ul个数
         // console.log(res);
         for(var i=0;i<res.length;i++){
             for(let j=0;j<newbuyLi.length;j++){
+                var url  =res[j].url.split('====')
                 var str="";
                 str +=`
-                <a href="#">
-                <img src=${res[j].url} alt="">
+                <a href="http://localhost/dangdang/scr/detail.html?id=${res[j].id}&index=1">
+                <img src=${url[0]} alt="">
                 </a>
                 <p>${res[j].name}</p>
                 <p class="price">${res[j].price}<span>${res[j].price2}</span></p>
@@ -123,8 +116,12 @@ function All(url,length,ul){            //地址，所有li长度，ul个数
             newbuyLi[j].innerHTML = str
             // ul[i].querySelectorAll("li")[j].innerHTML = str
             }
+                 
         }
+           // 关闭加载层
+           layer.close(loadindex)
     })
+     
 }
 All("http://localhost/dangdang/scr/php/list.php",newbuyLi.length,uls)
 // 封装渲染函数end
@@ -220,3 +217,5 @@ $(".fix8").click(function(){
     return false;
 })
 // 点击滚动到一定距离 end
+
+// 跳转商品详情页

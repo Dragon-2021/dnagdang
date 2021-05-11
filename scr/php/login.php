@@ -16,6 +16,8 @@ if($row){
             ],
             "data"=>null
         ];
+        // 创建cookie
+        setcookie('name',$username,time()+1000,'/');
     }else{
         $arr=[
             "meta"=>[

@@ -249,6 +249,7 @@
         if(!agreeProto.checked){
             agreeProto.parentElement.lastElementChild.innerText = '请勾选协议';
             agreeProto.parentElement.lastElementChild.style.display = 'block';
+            return false;
         }
 
         this.disabled = true

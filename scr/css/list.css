@@ -699,6 +699,11 @@ main{
     position: relative;
     /* 边框绝对定位 */
 }
+.newbuy ul li a{
+    width: 214px;
+    height: 200px;
+    display: inline-block;
+}
 .newbuy ul li a img{
     margin: 0 auto 6px;
 }

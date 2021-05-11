@@ -10,8 +10,10 @@
 <link rel="stylesheet" href="css/login.css">
 <link rel="shortcut icon" href="dangdang.ico" /> 
 <link rel="stylesheet" href="css/iconfont.css">
+<script src="js/toolsAll.js"></script>
 <script src="js/ajax.js"></script>
 <script src="js/jquery.js"></script>
+<script src="../scr/layer/layer.js"></script>
 <script src="js/tip.js"></script>
 <style>
    
@@ -100,7 +102,7 @@
                         </tr>
                         <tr>
                             <td class="tdfirst">密码：</td>
-                            <td><input type="text" name="sub" class="text"></td>
+                            <td><input type="password" name="sub" class="text"></td>
                             <td class="three">密码为6-16位</td>
                         </tr>
                         <tr>
@@ -201,6 +203,7 @@
         if(!agreeProto.checked){
             agreeProto.parentElement.lastElementChild.innerText = '请勾选协议';
             agreeProto.parentElement.lastElementChild.style.display = 'block';
+            return false;
         }
 
         this.disabled = true
@@ -217,10 +220,13 @@
                     //  解构赋值
                     tell.alert(message)
                     if(status ===1){
+                        // tool.setCookie('name',username,3600)
+                        // 创建cookie
                         // 注册成功，跳转登录界面
                         setTimeout(function(){
                         location.href = 'home.html';
                         },1500)
+                       
                         // 修改
                     }else{
                         setTimeout(function(){

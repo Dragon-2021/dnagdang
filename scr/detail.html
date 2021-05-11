@@ -12,8 +12,10 @@
     <link rel="stylesheet" href="css/detail.css">
     <script src="js/jquery.js"></script>
     <script src="js/bootstrap.js"></script>
+    <script src="../scr/layer/layer.js"></script>
     <script src="js/ajax.js"></script>
     <script src="js/tools.js"></script>
+
 </head>
 <body>
     <div class="map">  
@@ -201,14 +203,17 @@
     <div class="content">
         <div class="enlarge">
             <div class="middle">
-                <img src="http://img3m0.ddimg.cn/2/29/29176490-1_u_14.jpg" alt="">
+                <img  alt="" class="middleImg">
                 <div class="big">
-                    <img src="http://img3m0.ddimg.cn/2/29/29176490-1_u_14.jpg" alt="">
+                    <img  alt="" class="bigImg">
                 </div>
                 <div class="mark"></div>
             </div>
             <div class="small">
-                <img src="http://img3m0.ddimg.cn/2/29/29176490-1_u_14.jpg" alt="">
+                <!-- 改 -->
+                <!-- <img  src="images/footer_bg.png" class="active">
+                <img src="images/bigtitle.png" alt="">
+                <img src="images/buy_1.png" alt=""> -->
             </div>
             <div class="tit">
                 <div class="tit1">分享</div>
@@ -219,16 +224,16 @@
         <div class="box-right">
             <div class="box-cen">
                 <div class="box-cenheader">
-                    <h4 title="#"><img src="http://product.dangdang.com/images/icon_ddzy.png" alt=""> 影响孩子一生的亲子英文书：中国孩子英文学习路线图</h4>
-                    <h5 title="#">200万家庭信赖，揽获国际早教峰会、央广网众多奖项的米粒妈献给中国家庭的亲子英文启蒙指导书！</h5>
+                    <h4 title="#" class="headerOne"><img src="http://product.dangdang.com/images/icon_ddzy.png" alt=""><span>一本书像一艘船，带领我们从狭隘的地方，驶向无限广阔的海洋</span></h4>
+                    <h5 title="#">书中有梦，快乐阅读，图书五折封顶</h5>
                 </div>
                 <div class="box-time">
-                    <span class="time1">作者:米粒妈 著</span>
+                    <span class="time1"><span></span> </span>
                     <span class="time2">出版社:中国纺织出版社</span>
                     <span class="time3">出版时间:2021年01月 </span>
                     <div class="box-timeend">
-                        <span>在当当亲子/家教畅销榜排名128位</span>
-                        <span><span class="time4"></span><span>13178条评论</span></span>
+                        <span>热售图书</span>
+                        <span><span class="time4"></span><span class="random">13178条评论</span></span>
                     </div>
                 </div>
                 <div class="priceall">
@@ -236,13 +241,13 @@
                         <div class="price-left1">
                             <div class="price-left1-1">
                                 <p>抢购价</p>
-                                <p><span style="font-size: 12px;">￥</span>21.60<span style="font-size: 12px;">（4.5折）</span></p>
+                                <p><span style="font-size: 12px;">￥</span><span class="price1">21.60</span><span style="font-size: 12px;">（<span class="ze"></span>折）</span></p>
                             </div>
                         </div>
                     </div>
                     <div class="price-right">
-                        <p>电子书价</p>
-                        <p><span style="font-size: 12px;">￥</span>24.99</p>
+                        <p>原价</p>
+                        <p><span style="font-size: 12px;">￥</span><span class="price2">24.99</span></p>
                     </div>
                 </div>
                 <!-- 加入购物车 -->
@@ -253,7 +258,7 @@
                         <a href="javascript:;" class="del">－</a>
                     </div>
                     <div class="btns">
-                        <a href="cart.html"><div class="car"><span class="iconfont" style="font-size: 20px;">&#xe7e6;</span>&nbsp;加入购物车</div></a>
+                        <div class="car"><span class="iconfont" style="font-size: 20px;">&#xe7e6;</span>&nbsp;加入购物车</div><a href="cart.html"><button class="quickly">立即购买</button></a>
                     </div>
                 </div>
             </div>
