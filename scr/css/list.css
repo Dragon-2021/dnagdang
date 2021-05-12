@@ -699,6 +699,10 @@ main{
     position: relative;
     /* 边框绝对定位 */
 }
+.newbuy ul li a img{
+    width: 200px;
+    height: 200px;
+}
 .newbuy ul li a{
     width: 214px;
     height: 200px;
@@ -967,4 +971,10 @@ main{
 }
 .fix ul li:hover{
     cursor: pointer;
+}
+
+/*固定图片大小 */
+.newbuy>ul>li>img{
+    width: 200px;
+    height: 200px;
 }

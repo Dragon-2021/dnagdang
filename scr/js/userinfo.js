@@ -4,7 +4,7 @@ if(user){
     var str=`
     <span>欢迎${user}<a href="login.html" class="getout">退出</a></span>
     `
-}
+
 $(".submit_left").html(str)
 $(".submit_left .getout").click(function(){
     tool.removeCookie('name');
@@ -28,3 +28,4 @@ $(".submit_left .getout").click(function(){
         });
         return false;
 })
+}
