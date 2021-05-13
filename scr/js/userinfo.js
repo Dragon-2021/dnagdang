@@ -1,8 +1,9 @@
 var user = tool.getCookie('name');
 // console.log(user);
 if(user){
+    // decodeURIComponent(value)    解决中文乱码问题
     var str=`
-    <span>欢迎${user}<a href="login.html" class="getout">退出</a></span>
+    欢迎<span>${decodeURIComponent(user)}<a href="login.html" class="getout">退出</a></span>
     `
 
 $(".submit_left").html(str)
