@@ -5,7 +5,7 @@ var username = tool.getCookie('name');
 // console.log(username);
 if(username){
     var str=`
-    欢迎<span>${decodeURIComponent(user)}<a href="login.html" class="getout">退出</a></span>
+    欢迎<span>${decodeURIComponent(username)}<a href="login.html" class="getout">退出</a></span>
     `
 
 $(".submit_left").html(str)
