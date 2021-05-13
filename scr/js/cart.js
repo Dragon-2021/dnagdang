@@ -110,11 +110,11 @@ if(!data){
                     </td>
                     <td style="width: 220px;">	
                     ${goods.name}</td>
-                    <td style="width: 160px;">
+                    <td style="width: 140px;">
                         <p>¥<span>${goods.price.slice(1)}</span></p>
                         <p>限时抢</p>
                     </td>
-                    <td style="width: 160px;">
+                    <td style="width: 180px !important;">
                         <span>
                             <a href="javascript:;" class="bdd">-</a>
                             <input type="text" value="${goods.number}" class="number">
@@ -527,12 +527,14 @@ function All(){
                 icon:1
             })
         })
-           
+       
         })
         $(".goIndex").click(function(){
             window.open('home.html');
         })    
 }
-
+$(".goIndex").click(function(){
+    window.open('home.html');
+})  
  // 3秒后关闭遮罩
  t = setInterval("layer.close(loadindex)", 3000);

@@ -177,6 +177,8 @@
         if(username.value === ""){
             username.parentElement.nextElementSibling.innerText = '用户名不能为空';
             username.parentElement.nextElementSibling.style.visibility="visible"
+             sub.parentElement.nextElementSibling.style.close+"red"
+
             return false;
         }
          // 用户名由中文/字母和数字组成，数字不能开头,
@@ -184,11 +186,15 @@
         if(!reg.test(username.value)){
             username.parentElement.nextElementSibling.innerText = "用户名由字母开头，3-16位数字字母下划线"
             username.parentElement.nextElementSibling.style.visibility="visible"
+            sub.parentElement.nextElementSibling.style.close+"red"
+
             return false;
         }
         if(sub.value === ""){
             sub.parentElement.nextElementSibling.innerText = '密码不能为空';
             sub.parentElement.nextElementSibling.style.visibility="visible"
+            sub.parentElement.nextElementSibling.style.close+"red"
+
             return false;
         }
                // 密码为6-16位
@@ -196,6 +202,8 @@
         if(!reg.test(sub.value)){
             sub.parentElement.nextElementSibling.innerText = "密码必须为6-16位"
             sub.parentElement.nextElementSibling.style.visibility="visible"
+            sub.parentElement.nextElementSibling.style.close+"red"
+
             return false;
         }
         
@@ -240,6 +248,7 @@
     }
 username.onfocus = function(){
     username.parentElement.nextElementSibling.style.visibility="hidden";
+
 }
 sub.onfocus = function(){
     sub.parentElement.nextElementSibling.style.visibility="hidden";

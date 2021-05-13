@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2021-05-13 13:51:36
+Date: 2021-05-13 19:31:30
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -167,7 +167,7 @@ INSERT INTO `good` VALUES ('132', '春河 （当当专属签', '￥24.90', '￥4
 INSERT INTO `good` VALUES ('133', '一年：中华传统民俗', '￥99.60', '￥199.20', ' ', 'http://img3m0.ddimg.cn/65/12/29222390-1_u_9.jpg====http://img3m0.ddimg.cn/65/12/29222390-2_u_9.jpg====http://img3m0.ddimg.cn/65/12/29222390-3_u_9.jpg====http://img3m0.ddimg.cn/65/12/29222390-4_u_9.jpg====http://img3m0.ddimg.cn/65/12/29222390-5_u_9.jpg', '14');
 INSERT INTO `good` VALUES ('134', '老木村的朋友们', '￥79.00', '￥158.00', ' ', 'http://img3m0.ddimg.cn/33/18/29204340-1_u_6.jpg====http://img3m0.ddimg.cn/33/18/29204340-2_u_6.jpg====http://img3m0.ddimg.cn/33/18/29204340-4_u_6.jpg====http://img3m0.ddimg.cn/33/18/29204340-5_u_5.jpg', '14');
 INSERT INTO `good` VALUES ('135', '学习变现(IBM首席咨', '￥25.20', '￥50.00', ' ', 'http://img3m5.ddimg.cn/0/19/1901263815-1_l_1.jpg', '14');
-INSERT INTO `good` VALUES ('136', '半小时漫画必背古诗', '￥23.50', '￥49.00', ' ', 'http://img3m1.ddimg.cn/37/36/29219491-1_u_15.jpghttp://img3m1.ddimg.cn/37/36/29219491-1_u_15.jpg====http://img3m1.ddimg.cn/37/36/29219491-2_u_15.jpg====http://img3m1.ddimg.cn/37/36/29219491-3_u_11.jpg====http://img3m1.ddimg.cn/37/36/29219491-4_u_12.jpg====http://img3m1.ddimg.cn/37/36/29219491-5_u_12.jpg', '15');
+INSERT INTO `good` VALUES ('136', '半小时漫画必背古诗', '￥23.50', '￥49.00', ' ', 'http://img3m1.ddimg.cn/37/36/29219491-1_u_15.jpg====http://img3m1.ddimg.cn/37/36/29219491-2_u_15.jpg====http://img3m1.ddimg.cn/37/36/29219491-3_u_11.jpg====http://img3m1.ddimg.cn/37/36/29219491-4_u_12.jpg====http://img3m1.ddimg.cn/37/36/29219491-5_u_12.jpg', '15');
 INSERT INTO `good` VALUES ('137', '资治通鉴纲目（套装', '￥299.00', '￥598.00', ' ', 'http://img3m9.ddimg.cn/82/35/29224189-1_u_51.jpg====http://img3m9.ddimg.cn/82/35/29224189-2_u_50.jpg====http://img3m9.ddimg.cn/82/35/29224189-3_u_53.jpg====http://img3m9.ddimg.cn/82/35/29224189-4_u_51.jpg====http://img3m9.ddimg.cn/82/35/29224189-5_u_24.jpg', '15');
 INSERT INTO `good` VALUES ('138', '2021年注册会计师', '￥59.50', '￥119.00', ' ', 'http://img3m8.ddimg.cn/77/30/29143598-1_u_5.jpg', '15');
 INSERT INTO `good` VALUES ('139', '厨娘物语（亲笔签名', '￥34.00', '￥68.00', ' ', 'http://img3m8.ddimg.cn/49/16/29220988-1_u_28.jpg====http://img3m8.ddimg.cn/49/16/29220988-2_u_24.jpg====http://img3m8.ddimg.cn/49/16/29220988-3_u_25.jpg====http://img3m8.ddimg.cn/49/16/29220988-4_u_25.jpg====http://img3m8.ddimg.cn/49/16/29220988-5_u_26.jpg', '15');
@@ -446,4 +446,6 @@ INSERT INTO `user` VALUES ('lishiaaaaa', '123456', 'lishiaaaaaa', '13425678912')
 INSERT INTO `user` VALUES ('lishiaaaaa', '123456', 'lishiaaaaaa', '13425678912');
 INSERT INTO `user` VALUES ('lishiaaaaa', '123456', 'lishiaaaaaa', '13425678912');
 INSERT INTO `user` VALUES ('赫人', '123456', '赫人', '13425678912');
-INSERT INTO `user` VALUES ('花落因为花开过', '15870943773', '花落因为花开过', '13515151515');
+INSERT INTO `user` VALUES ('lilili', '123123', 'lilili', '13425678912');
+INSERT INTO `user` VALUES ('ololol', '123456', 'ololol', '13425678912');
+INSERT INTO `user` VALUES ('花落因为花开过', '123456', '花落因为花开过', '13425678912');

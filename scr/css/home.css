@@ -429,6 +429,9 @@ main{
 .bold .boldall:hover .boldall-more{
     display: block;
 }
+.header{
+    height: 100px;
+}
 .rank{
     width: 100%;
     height: 31px;

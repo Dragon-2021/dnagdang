@@ -56,7 +56,7 @@ main{
 }
 .submit{
     float: right;
-    width: 600px;
+    width: 650px;
     height: 45px;
     line-height: 45px;
 }
@@ -64,7 +64,12 @@ main{
     position: relative;
     top: -18px;
 } */
+.submit>.submit_left>span{
+    color: skyblue;
+}
 .submit>.submit_left>span>a{
+    display: inline-block;
+    padding-left: 10px;
     color: red;
 }
 .submit>a:hover{
@@ -72,7 +77,9 @@ main{
 }
 .submit .submit_left{
     float: left;
-    width: 130px;
+    width: 180px;
+    height: 45px;
+    overflow: hidden;
 }
 .submit ul{
     display: inline-block;
@@ -246,7 +253,10 @@ main{
 .submit ul>li:nth-of-type(7) ul li:hover{
     background-color:#F2F2F2 ;
 }
-
+/* 登录 退出 */
+.getout{
+    padding: 0 5px;
+}
 /* header */
 .header .logo{
     float: left;
@@ -374,6 +384,7 @@ main{
     width: 100%;
     height: 40px;
     line-height: 40px;
+    border-bottom: 3px #ff2832 solid;
     
 }
 .bold ul{
@@ -418,32 +429,6 @@ main{
 .bold .boldall:hover .boldall-more{
     display: block;
 }
-.rank{
-    width: 100%;
-    height: 31px;
-    background-color: #F5F5F5;
-    /* background-color:red; */
-    border-bottom: 4px solid #ff2832;
-}
-.rank main ul{
-    width: 100%;
-    height: 31px;
-    line-height: 31px;
-}
-.rank main ul li{
-    float: left;  
-}
-.rank main ul li a{
-    height: 12px;
-    padding: 0 14px;
-    color: #333;
-    font-size: 12px;
-    border-right: 1px solid #666;
-}
-.rank main ul li a:hover{
-    color: coral;
-}
-
 .header{
     height: 100px;
 }
@@ -525,6 +510,11 @@ main{
     color: red;
     text-align: center;
 }
+.books .more tr td:nth-of-type(5){
+    width: 180px;
+    color: red;
+    text-align: center;
+}
 .books .more tr td:nth-of-type(5)>span{
     height: 28px;
     line-height: 28px;
@@ -554,6 +544,7 @@ main{
     background-color: #fff;
     border-top: 1px solid #eeeeee;
     border-bottom: 1px solid #eeeeee;
+    color: black;
 }
 .books .more tr td:nth-of-type(6)>p{
     color: red;

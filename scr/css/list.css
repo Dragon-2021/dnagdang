@@ -64,6 +64,15 @@ main{
     position: relative;
     top: -18px;
 } */
+.submit>.submit_left>span{
+    color: skyblue;
+}
+.submit .submit_left{
+    float: left;
+    width: 180px;
+    height: 45px;
+    overflow: hidden;
+}
 .submit>.submit_left>span>a{
     color: red;
 }

@@ -285,8 +285,8 @@ form,table{
     width:310px;
     height: 77px;
     text-align: left;
-    visibility: hidden;
-    color: red;
+    visibility: visible ;
+    color: black;
 
 }
 .quickly,.submits,.repeat{
