@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50553
 File Encoding         : 65001
 
-Date: 2021-05-13 11:47:23
+Date: 2021-05-13 13:51:36
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -318,7 +318,7 @@ INSERT INTO `good2` VALUES ('121', '从诗经到红楼梦', '￥16.00', '￥56.0
 INSERT INTO `good2` VALUES ('122', '猫武士外传（1-7套装）', '￥19.00', '￥89.00', 'http://img3m4.ddimg.cn/20/29/25229774-1_u_3.jpg====http://img3m4.ddimg.cn/20/29/25229774-2_u_3.jpg====http://img3m4.ddimg.cn/20/29/25229774-3_u_3.jpg====http://img3m4.ddimg.cn/20/29/25229774-4_u_3.jpg====http://img3m4.ddimg.cn/20/29/25229774-5_u_3.jpg', ' ', '12');
 INSERT INTO `good2` VALUES ('123', '成长的秘密（全套8册）', '￥46.00', '￥56.00', 'http://img3m8.ddimg.cn/64/25/28995778-1_u_5.jpg====http://img3m8.ddimg.cn/64/25/28995778-2_u_5.jpg====http://img3m8.ddimg.cn/64/25/28995778-3_u_6.jpg====http://img3m8.ddimg.cn/64/25/28995778-4_u_6.jpg====http://img3m8.ddimg.cn/64/25/28995778-5_u_6.jpg', ' ', '12');
 INSERT INTO `good2` VALUES ('124', '童话世界伊索寓言全6册', '￥12.00', '￥25.00', 'http://img3m1.ddimg.cn/57/18/28995771-1_u_6.jpg====http://img3m1.ddimg.cn/57/18/28995771-2_u_6.jpg====http://img3m1.ddimg.cn/57/18/28995771-3_u_6.jpg====http://img3m1.ddimg.cn/57/18/28995771-4_u_6.jpg====http://img3m1.ddimg.cn/57/18/28995771-5_u_6.jpg', ' ', '12');
-INSERT INTO `good2` VALUES ('125', '走进奇妙的世界安徒生童', '￥15.00', '￥65.00', 'http://img3m2.ddimg.cn/58/19/28995772-1_u_5.jpg====http://img3m2.ddimg.cn/58/19/28995772-2_u_6.jpg====http://img3m2.ddimg.cn/58/19/28995772-3_u_6.jpg====http://img3m2.ddimg.cn/58/19/28995772-4_u_5.jpg====http://img3m2.ddimg.cn/58/19/28995772-5_u_5.jpg', ' ', '12');
+INSERT INTO `good2` VALUES ('125', '走进奇妙的世界安徒生童话', '￥15.00', '￥65.00', 'http://img3m2.ddimg.cn/58/19/28995772-1_u_5.jpg====http://img3m2.ddimg.cn/58/19/28995772-2_u_6.jpg====http://img3m2.ddimg.cn/58/19/28995772-3_u_6.jpg====http://img3m2.ddimg.cn/58/19/28995772-4_u_5.jpg====http://img3m2.ddimg.cn/58/19/28995772-5_u_5.jpg', ' ', '12');
 INSERT INTO `good2` VALUES ('126', '昆虫记', '￥33.00', '￥66.00', 'http://img3m4.ddimg.cn/60/21/28995774-1_u_6.jpg====http://img3m4.ddimg.cn/60/21/28995774-2_u_6.jpg====http://img3m4.ddimg.cn/60/21/28995774-3_u_6.jpg====http://img3m4.ddimg.cn/60/21/28995774-4_u_6.jpg====http://img3m4.ddimg.cn/60/21/28995774-5_u_6.jpg', ' ', '12');
 
 -- ----------------------------
