@@ -4,15 +4,18 @@
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>新用户注册-当当网</title>
-<link rel="stylesheet" href="css/bootstrap.css?a=1">
+<title>登录-当当网</title>
+<link rel="stylesheet" href="css/bootstrap.css">
 <link rel="stylesheet" href="css/all.css">
-<link rel="stylesheet" href="css/register.css">
+<link rel="stylesheet" href="css/login.css">
 <link rel="shortcut icon" href="dangdang.ico" /> 
 <link rel="stylesheet" href="css/iconfont.css">
+<script src="js/toolsAll.js"></script>
 <script src="js/ajax.js"></script>
 <script src="js/jquery.js"></script>
-<script src="js/tip.js"></script>
+<script src="../scr/layer/layer.js"></script>
+<!-- <script src="js/tip.js"></script> -->
+<script src="../scr/layer/layer.js"></script>
 <style>
    
 </style>
@@ -85,7 +88,7 @@
         <div class="new">
             <div class="new_more">
                 <div class="headers">
-                    <div class="user">新用户注册</div>
+                    <div class="user">用户登录</div>
                     <div class="dd">
                         <img src="images/register2.png" alt="">
                         <a href="home.html">当当首页</a>
@@ -104,25 +107,9 @@
                             <td class="three">密码为6-16位</td>
                         </tr>
                         <tr>
-                            <td class="tdfirst">确认密码：</td>
-                            <td><input type="password" name="repeat" class="text"></td>
-                            <td class="three">确认密码</td>
-                        </tr>
-                        <tr>
-                            <td class="tdfirst">邮箱：</td>
-                            <td><input type="text" name="email" class="text"></td>
-                            <td class="three">邮箱必须是QQ邮箱或网易邮箱</td>
-                        </tr>
-                        <tr>
-                            <td class="tdfirst">手机号</td>
-                            <td><input type="text" name="phone" class="text"></td>
-                            <td class="three">手机号必须为11位数字</td>
-                        </tr>
-                        <tr></tr>
-                        <tr>
                             <td><input type="reset" name="reset" class="repeat"></td>
-                            <td><input type="submit" value="立即注册" name="go" style="margin-right: 20px;" class="quickly">
-                                <input type="button" name="or" value="登录界面" class="submits"></td>
+                            <td><input type="submit" value="立即登录" name="go" style="margin-right: 20px;" class="quickly">
+                                <input type="button" name="or" value="注册界面" class="submits"></td>
                         </tr>
                         
                     </table>
@@ -169,16 +156,13 @@
     var tipBox = document.querySelector('.tipBox')
     var username = document.querySelector("[name = username]")
     var sub = document.querySelector("[name = sub]")
-    var repeat = document.querySelector("[name = repeat]")
-    var email = document.querySelector("[name = email]")
-    var phone = document.querySelector("[name = phone]")
     var agreeProto = document.querySelector('[name="agree"]')
     // 查看条款
     seeProto.onclick = function(){
         proto.style.display = 'block';
     }
     or.onclick = function(){
-        location.href ="login.html"
+        location.href ="register.html"
     }
     //关闭条款
     closeBtn.onclick = function(){
@@ -194,7 +178,7 @@
         if(username.value === ""){
             username.parentElement.nextElementSibling.innerText = '用户名不能为空';
             username.parentElement.nextElementSibling.style.visibility="visible"
-            sub.parentElement.nextElementSibling.style.close+"red"
+             sub.parentElement.nextElementSibling.style.close+"red"
 
             return false;
         }
@@ -220,83 +204,44 @@
             sub.parentElement.nextElementSibling.innerText = "密码必须为6-16位"
             sub.parentElement.nextElementSibling.style.visibility="visible"
             sub.parentElement.nextElementSibling.style.close+"red"
-            return false;
-        }
-        if(repeat.value === ""){
-            repeat.parentElement.nextElementSibling.innerText = "确认密码不能为空"
-            sub.parentElement.nextElementSibling.style.close+"red"
 
             return false;
         }
-        if(repeat.value !== sub.value){
-            repeat.parentElement.nextElementSibling.innerText = "两次输入的密码不一致"
-            sub.parentElement.nextElementSibling.style.close+"red"
-
-            return false
-        }
-        if(email.value === ""){
-            email.parentElement.nextElementSibling.innerText = '邮箱不能为空';
-            email.parentElement.nextElementSibling.style.visibility="visible"
-            sub.parentElement.nextElementSibling.style.close+"red"
-
-            return false;
-        }
-        var reg = /(^[1-9]\d{4,10}@qq\.com$)|(^[a-zA-Z]\w{3,11}@((126|163)\.com)|(yeah\.net)$)/
-        if(!reg.test(email.value)){
-            email.parentElement.nextElementSibling.innerText = '邮箱格式必须为qq邮箱或网易邮箱格式';
-            email.parentElement.nextElementSibling.style.visibility="visible"
-            sub.parentElement.nextElementSibling.style.close+"red"
-
-            return false;
-        }
-        if(phone.value === ""){
-            phone.parentElement.nextElementSibling.innerText = '手机号不能为空';
-            phone.parentElement.nextElementSibling.style.visibility="visible"
-            sub.parentElement.nextElementSibling.style.close+"red"
-
-            return false;
-        }
-        var reg = /^1[3-9][0-9]{9}$/
-        if(!reg.test(phone.value)){
-            phone.parentElement.nextElementSibling.innerText = '手机号必须为11位数字';
-            phone.parentElement.nextElementSibling.style.visibility="visible"
-            sub.parentElement.nextElementSibling.style.close+"red"
-
-            return false;
-        }
+        
         // 校验条款
         if(!agreeProto.checked){
             agreeProto.parentElement.lastElementChild.innerText = '请勾选协议';
             agreeProto.parentElement.lastElementChild.style.display = 'block';
-            
             return false;
         }
 
         this.disabled = true
         promiseAjax({
-            url:'php/register.php',
+            url:'php/login.php',
                 method:"post",
-                dataType:"json",
+                // dataType:"json",
                 data:{
-                    username:document.querySelector("[name='username']").value,
+                    username:document.querySelector("[name = 'username']").value,
                     sub:document.querySelector("[name='sub']").value,
-                    email:document.querySelector("[name='email']").value,
-                    phone:document.querySelector("[name='phone']").value,
                 },
         }).then(function(res){
             var{meta:{status,message}} = res;
                     //  解构赋值
-                    tell.alert(message)
+                    // tell.alert(message)
                     if(status ===1){
+                        // tool.setCookie('name',username,3600)
+                        // 创建cookie
                         // 注册成功，跳转登录界面
+                        layer.msg('登录成功');
                         setTimeout(function(){
-                        location.href = 'login.html';
+                        location.href = 'home.html';
                         },1500)
+                       
                         // 修改
                     }else{
                         setTimeout(function(){
                         submit.disabled = false;
-                        tell.close()
+                        layer.msg('登录失败');
                     },2000)
       }
                     return false;
@@ -305,23 +250,12 @@
     }
 username.onfocus = function(){
     username.parentElement.nextElementSibling.style.visibility="hidden";
+
 }
-// username.onblur = function(){
-//     username.parentElement.nextElementSibling.style.visibility="hidden";
-// }
 sub.onfocus = function(){
     sub.parentElement.nextElementSibling.style.visibility="hidden";
 }
-console.log(repeat);
-repeat.onfocus = function(){
-    repeat.parentElement.nextElementSibling.style.visibility="hidden";
-}
-email.onfocus = function(){
-    email.parentElement.nextElementSibling.style.visibility="hidden";
-}
-phone.onfocus = function(){
-    phone.parentElement.nextElementSibling.style.visibility="hidden";
-}
+
 // agreeProto.onclick = function(){
 //   if(this.checked){
 //       agreeProto.parentElement.lastElementChild.style.display = 'none';
