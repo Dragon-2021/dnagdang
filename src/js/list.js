@@ -103,7 +103,7 @@ function All(url,length,ul){            //地址，所有li长度，ul个数
                 var url  =res[j].url.split('====')
                 var str="";
                 str +=`
-                <a href="http://localhost/dangdang/scr/detail.html?id=${res[j].id}&index=1">
+                <a href="http://localhost/dangdang/src/detail.html?id=${res[j].id}&index=1">
                 <img src=${url[0]} alt="">
                 </a>
                 <p>${res[j].name}</p>
@@ -123,7 +123,7 @@ function All(url,length,ul){            //地址，所有li长度，ul个数
     })
      
 }
-All("http://localhost/dangdang/scr/php/list.php",newbuyLi.length,uls)
+All("http://localhost/dangdang/src/php/list.php",newbuyLi.length,uls)
 // 封装渲染函数end
 // 点击滚动到一定距离
 $flag  = true

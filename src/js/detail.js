@@ -84,7 +84,7 @@ let types= getParams("id");
 // 判断是哪一个表来的数据
     if(index){
         // let id= getParams("id");
-        $.get("http://localhost/dangdang/scr/php/listTo.php",{
+        $.get("http://localhost/dangdang/src/php/listTo.php",{
         id:types,
     },function(res){
         let img = res[0].url.split('====');
@@ -122,7 +122,7 @@ let types= getParams("id");
         $(".ze").text(parseFloat((res[0].price.slice(1,3)-0)*10/res[0].price3-0).toFixed(1))
         layer.close(loadindex)
         $(".quickly").click(function(){
-            location.href="http://localhost/dangdang/scr/cart.html?index=1"
+            location.href="http://localhost/dangdang/src/cart.html?index=1"
         })
         // 给网页加标题
 
@@ -142,7 +142,7 @@ let types= getParams("id");
         return null;
     };
 
-    $.get("http://localhost/dangdang/scr/php/detail.php",{
+    $.get("http://localhost/dangdang/src/php/detail.php",{
         id:types,
     },function(res){
         let img = res[0].url.split('====');
@@ -178,7 +178,7 @@ let types= getParams("id");
         $(".ze").text(parseFloat((res[0].price.slice(1)-0)*10/res[0].price2.slice(1)-0).toFixed(1))
         layer.close(loadindex)
         $(".quickly").click(function(){
-            location.href="http://localhost/dangdang/scr/cart.html?fir=1"
+            location.href="http://localhost/dangdang/src/cart.html?fir=1"
         })
         // 给网页加标题
 
@@ -199,7 +199,7 @@ let types= getParams("id");
         return null;
     };
 
-    $.get("http://localhost/dangdang/scr/php/detailTwo.php",{
+    $.get("http://localhost/dangdang/src/php/detailTwo.php",{
         id:types,
     },function(res){
         let img = res[0].url.split('====');
@@ -235,7 +235,7 @@ let types= getParams("id");
         $(".ze").text(parseFloat((res[0].price.slice(1)-0)*10/res[0].price2.slice(1)-0).toFixed(1))
         layer.close(loadindex)
         $(".quickly").click(function(){
-            location.href="http://localhost/dangdang/scr/cart.html?oller=1"
+            location.href="http://localhost/dangdang/src/cart.html?oller=1"
         })
         // 给网页加标题
         $(document).attr("title",res[0].name)

@@ -230,7 +230,7 @@ tables2.init()
 // 渲染
 var num=0
 promiseAjax({
-    url:"http://localhost/dangdang/scr/php/home.php",
+    url:"http://localhost/dangdang/src/php/home.php",
     // data:{
     //     pid:1
     // }
@@ -242,7 +242,7 @@ promiseAjax({
             var url  =res[j+i].url.split('====')
             var str="";
             str +=`
-            <a href="http://localhost/dangdang/scr/detail.html?id=${res[j+i].id}&fir=1">
+            <a href="http://localhost/dangdang/src/detail.html?id=${res[j+i].id}&fir=1">
             <img src=${url[0]} alt="">
             </a>
             <p class="only-first">${res[j+i].name}</p>
@@ -275,7 +275,7 @@ function All(url,length,ul){            //地址，所有li长度，ul个数
                 var url  =res[j+i].url.split('====')
                 var str="";
                 str +=`
-                <a href="http://localhost/dangdang/scr/detail.html?id=${res[j+i].id}&oller=1">
+                <a href="http://localhost/dangdang/src/detail.html?id=${res[j+i].id}&oller=1">
                 <img src=${url[0]} alt="">
                 </a>
                 <p class="only-first">${res[j+i].name}</p>
@@ -296,7 +296,7 @@ function All(url,length,ul){            //地址，所有li长度，ul个数
     }
 }
 // 封装渲染函数end
-All('http://localhost/dangdang/scr/php/homeGood.php',greatullis2.length,greatul2)
+All('http://localhost/dangdang/src/php/homeGood.php',greatullis2.length,greatul2)
 // 区域滚动
 $off =true
 $(".fix7").click(function(){
